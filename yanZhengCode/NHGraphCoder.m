@@ -260,6 +260,7 @@ typedef void(^NHSliderEvent)(CGFloat p, BOOL end);
     //[self addSubview:infoLabel];
     FBShimmeringView *shimmer = [[FBShimmeringView alloc] initWithFrame:bounds];
     shimmer.shimmering = true;
+    shimmer.backgroundColor = [UIColor orangeColor];
     shimmer.shimmeringBeginFadeDuration = 1.5;
     shimmer.shimmeringOpacity = 0.3;
     shimmer.contentView = infoLabel;
